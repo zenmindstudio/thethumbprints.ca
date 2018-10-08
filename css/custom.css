@@ -1,1 +1,10 @@
 /*! Place your custom styles here */
+
+.home-slider-text {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#menu2 {
+  display: none;
+}

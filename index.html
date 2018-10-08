@@ -13,13 +13,19 @@ about_us:
 blog_featured_articles:
   title: ''
   description: ''
-
 ---
-<section class="cover height-90 imagebg text-center" data-overlay="2" id="home">
-    <div class="background-image-holder">
-        <img alt="background" src="img/landing-10.jpg" />
-    </div>
-    <div class="container pos-vertical-center">
+
+<section class="cover height-100 imagebg text-center slider slider--ken-burns">
+    <ul class="slides">
+        {% for image in page.slider.images %}
+          <li class="imagebg" data-overlay="4">
+              <div class="background-image-holder background--top">
+                  <img alt="background" src="{{ image }}" />
+              </div>
+          </li>
+        {% endfor %}
+    </ul>
+    <div class="container pos-absolute home-slider-text">
         <div class="row">
             <div class="col-md-8">
                 <img alt="Image" class="unmarg--bottom" src="img/headline-1.png" />
@@ -27,17 +33,21 @@ blog_featured_articles:
         </div>
         <!--end of row-->
         <div class="row">
-            <div class="col">
-                <a href="/about">About</a>
-            </div>
-            <div class="col">
-                <a href="#">Gallery</a>
-            </div>
-            <div class="col">
-                <a href="#">Contact</a>
-            </div>
-            <div class="col">
-                <a href="#">Blog</a>
+            <div class="col-6">
+              <div class="row">
+                <div class="col">
+                    <a href="/about">About</a>
+                </div>
+                <div class="col">
+                    <a href="#">Gallery</a>
+                </div>
+                <div class="col">
+                    <a href="#">Contact</a>
+                </div>
+                <div class="col">
+                    <a href="#">Blog</a>
+                </div>
+              </div>
             </div>
         </div>
         <!--end of row-->
