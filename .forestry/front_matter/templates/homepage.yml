@@ -1,0 +1,38 @@
+---
+label: Homepage
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: field_group
+  name: slider
+  label: Slider
+  fields:
+  - type: image_gallery
+    name: images
+    label: Images
+- type: field_group
+  name: about_us
+  label: About Us
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: description
+    label: Description
+  - type: file
+    name: image
+    label: Image
+- type: field_group
+  name: blog_featured_articles
+  label: Blog Featured Articles
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: description
+    label: Description
