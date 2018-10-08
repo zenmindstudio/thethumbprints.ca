@@ -18,10 +18,10 @@
     <body class="{{ page.layout }} {{ page.title | downcase | slugify }}" data-smooth-scroll-offset='180'>
         <a id="start"></a>
         {% include header.html %}
-        <div class="main-container">
+        <main class="main-container">
             {{ content }}
-            {% include footer.html %}
-        </div>
+        </main>
+        {% include footer.html %}
         <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>

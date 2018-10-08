@@ -1,10 +1,74 @@
 /*! Place your custom styles here */
 
+body {
+  background: #fffdf2;
+}
+
+main {
+  min-height: calc(100vh - 110px - 158px);
+}
+
 .home-slider-text {
   top: 50%;
   transform: translateY(-50%);
 }
 
 #menu2 {
+  background-color: #fffdf2;
+}
+
+.home #menu2 {
   display: none;
+}
+
+.home #menu2.bar.pos-fixed {
+  display: block;
+}
+
+.bar {
+  padding: 0.92857143em 0;
+}
+
+.bar .logo {
+  max-height: 6em;
+  top: 0;
+}
+
+.bar-2 .logo {
+  position: static;
+  transform: none;
+}
+
+.bar .menu-horizontal {
+  top: 0;
+}
+
+@media all and (min-width: 990px) {
+  .menu-horizontal li:not(:last-child) {
+    margin-right: 3.71428572em;
+  }
+}
+
+/* Colors  */
+
+.bg--dark {
+  background: #3c2415;
+}
+
+.btn--primary {
+  background: #a97c50;
+  border-color: #a97c50;
+}
+
+.btn--primary:hover {
+  background: #8e6642;
+  border-color: #8e6642;
+}
+
+a {
+  color: #a97c50;
+}
+
+a:hover {
+  color: #8e6642;
 }

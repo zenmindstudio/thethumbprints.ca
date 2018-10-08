@@ -8,15 +8,12 @@ layout: default
             <div class="col-md-10 col-lg-8">
                 <article>
                     <div class="article__title text-center">
-                        <h1 class="h2">Building an online audience</h1>
-                        <span>May 2nd 2016 in </span>
-                        <span>
-                            <a href="#">Web Design</a>
-                        </span>
+                        <h1 class="h2">{{ page.title }}</h1>
+                        <time>{{ page.date | date_to_string }}</time>
                     </div>
                     <!--end article title-->
                     <div class="article__body">
-                        <img alt="Image" src="img/blog-1.jpg" />
+                        <img alt="{{ page.title }}" src="{{ page.image }}" />
                         <p>
                             Co-working SpaceTeam fund big data prototype prototype long shadow latte big data. Innovate affordances personas user centered design paradigm user centered design innovate quantitative vs. qualitative pivot thought leader viral paradigm cortado affordances.
                         </p>
@@ -28,7 +25,6 @@ layout: default
                             &ldquo; We want everyone to have a great experience building their website &mdash; and with Stack they get just that&rdquo;
                         </blockquote>
                         <figure class="col-6 pull-right">
-                            <img alt="Image" src="img/blog-2.jpg" />
                             <figcaption>Credit: Chris Campbell (via Unsplash)</figcaption>
                         </figure>
                         <p>
