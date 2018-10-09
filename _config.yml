@@ -25,6 +25,18 @@ twitter_username: jekyllrb
 github_username:  jekyll
 logo: "/uploads/logo.png"
 
+# Collections
+collections:
+  artifacts:
+    permalink: "/artifact/:title/"
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: artifacts
+    values:
+      layout: artifact
+
 # Build settings
 markdown: kramdown
 plugins:

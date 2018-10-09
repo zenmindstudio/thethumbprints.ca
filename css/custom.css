@@ -1,7 +1,7 @@
 /*! Place your custom styles here */
 
 body {
-  background: #fdf7e2;
+  background: #000;
 }
 
 main {
@@ -14,7 +14,7 @@ main {
 }
 
 #menu2 {
-  background-color: #fdf7e2;
+  background-color: #000;
 }
 
 .home #menu2 {
@@ -49,21 +49,17 @@ main {
   }
 }
 
+/* Typography */
+
+a:hover {
+  text-decoration: none;
+}
+
+.imagebg:not(.image--light) a:hover {
+  color: #a97c50;
+}
+
 /* Colors  */
-
-.bg--dark {
-  background: #3c2415;
-}
-
-.btn--primary {
-  background: #a97c50;
-  border-color: #a97c50;
-}
-
-.btn--primary:hover {
-  background: #8e6642;
-  border-color: #8e6642;
-}
 
 a {
   color: #a97c50;
@@ -71,4 +67,34 @@ a {
 
 a:hover {
   color: #8e6642;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.menu-horizontal > li > a, .menu-horizontal > li > span,
+.menu-horizontal > li > .modal-instance > .modal-trigger {
+  color: #a97c50;
+}
+
+.menu-horizontal > li:not(:hover) > a, .menu-horizontal > li:not(:hover) > span,
+.menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
+  opacity: 1;
+}
+
+.lead {
+  color: #fffdf1;
+  font-weight: 300;
+}
+
+.bg--dark {
+  background: #3c2415;
+}
+
+.btn--primary, .btn--primary:visited {
+  background: #a97c50;
+  border-color: #a97c50;
+}
+
+.btn--primary:hover {
+  background: #8e6642;
+  border-color: #8e6642;
 }
