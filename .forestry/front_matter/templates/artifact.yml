@@ -1,0 +1,20 @@
+---
+label: Artifact
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: textarea
+  name: description
+  label: Description
+- type: textarea
+  name: origin
+  label: Origin
+- type: text
+  name: dimensions
+  label: Dimensions
+- type: image_gallery
+  name: images
+  label: Images
