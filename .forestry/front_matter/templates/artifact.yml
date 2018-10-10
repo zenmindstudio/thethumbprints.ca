@@ -19,5 +19,6 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/face-mask.md
 - _artifacts/horn-trumpet.md
 - _artifacts/group-of-monkeys.md
