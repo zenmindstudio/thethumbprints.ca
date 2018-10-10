@@ -19,4 +19,5 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/horn-trumpet.md
 - _artifacts/group-of-monkeys.md
