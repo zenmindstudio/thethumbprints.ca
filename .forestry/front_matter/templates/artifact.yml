@@ -19,6 +19,7 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/couple.md
 - _artifacts/knock-knock.md
 - _artifacts/bamboo-flute.md
 - _artifacts/tribals-head-gears.md
