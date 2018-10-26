@@ -19,6 +19,7 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/holy-cow.md
 - _artifacts/twonicorn.md
 - _artifacts/raptors.md
 - _artifacts/stylish-turtle-ash-try-and-smoke-stick-holder.md
