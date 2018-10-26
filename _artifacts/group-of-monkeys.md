@@ -9,10 +9,7 @@ description: 'These sleek black monkeys are an art innovation made from a single
 origin: ''
 dimensions: ''
 images:
-- "/uploads/IMG_0166.JPG"
-- "/uploads/IMG_0165.JPG"
-- "/uploads/Copy of IMG_0267.jpg"
-- 
+- "/uploads/20181024_180257922_iOS.jpg"
 published: false
 
 ---
