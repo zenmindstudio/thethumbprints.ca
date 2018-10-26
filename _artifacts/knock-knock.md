@@ -9,9 +9,7 @@ description: Elephants hold a special happy place in the lives of Bastar tribals
 origin: ''
 dimensions: ''
 images:
-- "/uploads/IMG_0186.JPG"
-- "/uploads/IMG_0189.JPG"
-- "/uploads/IMG_0178.jpg"
+- "/uploads/20181019_205802061_iOS.jpg"
 published: false
 
 ---
