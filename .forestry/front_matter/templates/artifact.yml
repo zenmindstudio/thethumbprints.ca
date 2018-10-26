@@ -19,6 +19,7 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/queen.md
 - _artifacts/smiley-face-mask.md
 - _artifacts/victory-horse.md
 - _artifacts/antler-deer-clouple.md
