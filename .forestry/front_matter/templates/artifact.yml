@@ -19,6 +19,7 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/stylish-turtle-ash-try-and-smoke-stick-holder.md
 - _artifacts/musicians.md
 - _artifacts/antique-lamp.md
 - _artifacts/couple.md
