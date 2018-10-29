@@ -98,3 +98,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
   background: #8e6642;
   border-color: #8e6642;
 }
+
+/* Slider */
+
+.slider.boxed--border .slides li {
+  border: none;
+}
