@@ -11,6 +11,5 @@ dimensions: ''
 images:
 - "/uploads/20181024_200905638_iOS.jpg"
 - "/uploads/20181024_200554580_iOS.jpg"
-published: false
 
 ---
