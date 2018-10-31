@@ -8,6 +8,5 @@ origin: ''
 dimensions: ''
 images:
 - "/uploads/IMG_0208.jpg"
-published: false
 
 ---
