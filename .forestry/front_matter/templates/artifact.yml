@@ -22,8 +22,8 @@ fields:
   name: images
   label: Images
 pages:
-- _artifacts/queen.md
 - _artifacts/victory-horse.md
+- _artifacts/queen.md
 - _artifacts/couple.md
 - _artifacts/holy-cow.md
 - _artifacts/antler-deer-clouple.md
