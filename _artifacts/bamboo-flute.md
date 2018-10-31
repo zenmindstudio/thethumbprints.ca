@@ -12,6 +12,5 @@ origin: ''
 dimensions: ''
 images:
 - "/uploads/IMG_0271.jpg"
-published: false
 
 ---
