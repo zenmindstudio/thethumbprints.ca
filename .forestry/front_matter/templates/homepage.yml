@@ -26,6 +26,16 @@ fields:
   - type: file
     name: image
     label: Image
+- type: list
+  name: featured_artifacts
+  label: Featured Artifacts
+  config:
+    max: '4'
+    min: '4'
+    use_select: true
+    source:
+      type: pages
+      section: artifacts
 - type: field_group
   name: blog_featured_articles
   label: Blog Featured Articles
