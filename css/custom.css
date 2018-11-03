@@ -1,5 +1,4 @@
 /*! Place your custom styles here */
-
 body {
   background: #000;
 }
@@ -50,9 +49,14 @@ main {
 }
 
 /* Typography */
-
 a:hover {
   text-decoration: none;
+}
+
+/* Stack Links */
+
+.imagebg:not(.image--light) a {
+  color: #fdf9e3;
 }
 
 .imagebg:not(.image--light) a:hover {
@@ -60,19 +64,37 @@ a:hover {
 }
 
 /* Colors  */
-
-a {
-  color: #a97c50;
-}
-
-a:hover {
-  color: #8e6642;
+body,
+article .article__body p,
+article .article__body ul,
+.imagebg:not(.image--light) h1,
+.imagebg:not(.image--light) h2,
+.imagebg:not(.image--light) h3,
+.imagebg:not(.image--light) h4,
+.imagebg:not(.image--light) h5,
+.imagebg:not(.image--light) h6,
+.imagebg:not(.image--light) p,
+.imagebg:not(.image--light) ul,
+.imagebg:not(.image--light) blockquote,
+.lead {
+  color: #fdf9e3;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 .menu-horizontal > li > a, .menu-horizontal > li > span,
 .menu-horizontal > li > .modal-instance > .modal-trigger {
-  color: #a97c50;
+  color: #df902b;
+}
+
+a {
+  color: #fdf9e3;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+
+a:hover {
+  color: #794809;
 }
 
 .menu-horizontal > li:not(:hover) > a, .menu-horizontal > li:not(:hover) > span,
@@ -81,26 +103,58 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 }
 
 .lead {
-  color: #fffdf1;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .bg--dark {
   background: #3c2415;
 }
 
+/* Slider */
+.slider.boxed--border .slides li {
+  border: none;
+}
+
+/* Menus */
+.menu-horizontal > li > a:hover,
+.menu-horizontal > li > span:hover,
+.menu-horizontal > li > .modal-instance > .modal-trigger:hover {
+  color: #8a540d;
+}
+
+/* Buttons */
 .btn--primary, .btn--primary:visited {
-  background: #a97c50;
-  border-color: #a97c50;
+  background: #df902b;
+  border-color: #df902b;
 }
 
 .btn--primary:hover {
-  background: #8e6642;
-  border-color: #8e6642;
+  background: #8a540d;
+  border-color: #8a540d;
 }
 
-/* Slider */
+/* Boxes */
+.boxed.boxed--border {
+  border: 0.5px solid rgba(223, 144, 43, 0.4);
+}
 
-.slider.boxed--border .slides li {
-  border: none;
+/* Cards */
+.card-2 .card__body,
+.card-2 .card__bottom {
+  border: 1px solid rgba(223, 144, 43, 0.4);
+}
+
+.gallery .card-2 .card__body {
+  border-top: none;
+}
+
+/* Stack Features Small */
+.feature__body.boxed.boxed--border {
+  border-top: none;
+}
+
+/*! -- Stack Bars -- */
+.menu-horizontal > li > a,
+.menu-horizontal > li > .modal-instance > a {
+  font-weight: 600;
 }

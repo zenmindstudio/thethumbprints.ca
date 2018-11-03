@@ -83,96 +83,9 @@ featured_artifacts:
     </div>
     <!--end of container-->
 </section>
-<section class="text-center">
+<section class="space--sm  text-center">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8">
-                <h2>All the tools you'll need</h2>
-                <p class="lead">
-                    Whether you’re building a welcome mat for your SaaS or a clean, corporate portfolio, Stack has your design needs covered.
-                </p>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
-<section class="space--sm">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-12 col-12">
-                <div class="boxed bg--secondary">
-                    <div class="pos-vertical-center">
-                        <h3>Valuable business insight delivered direct to your inbox</h3>
-                        <p>Join over 20,000 other designers</p>
-                    </div>
-                </div>
-            </div>
-            <!--end item-->
-            <div class="col-md-4 col-12">
-                <a class="block" href="#">
-                    <article class="imagebg border--round" data-scrim-bottom="8">
-                        <div class="background-image-holder">
-                            <img alt="background" src="img/blog-3.jpg" />
-                        </div>
-                        <div class="article__title">
-                            <span>May 12th 2016</span>
-                            <h4>Small businesses that expertly leverage their online followings</h4>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <!--end item-->
-            <div class="col-md-4 col-12">
-                <a class="block" href="#">
-                    <article class="imagebg border--round" data-scrim-bottom="8">
-                        <div class="background-image-holder">
-                            <img alt="background" src="img/blog-4.jpg" />
-                        </div>
-                        <div class="article__title">
-                            <span>May 9th 2016</span>
-                            <h4>Designing efficiently in the age of distraction</h4>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <!--end item-->
-            <div class="col-md-4 col-12">
-                <a class="block" href="#">
-                    <article class="imagebg border--round" data-scrim-bottom="8">
-                        <div class="background-image-holder">
-                            <img alt="background" src="img/blog-4.jpg" />
-                        </div>
-                        <div class="article__title">
-                            <span>May 9th 2016</span>
-                            <h4>Designing efficiently in the age of distraction</h4>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <!--end item-->
-            <div class="col-md-4 col-12">
-                <a class="block" href="#">
-                    <article class="imagebg border--round" data-scrim-bottom="8">
-                        <div class="background-image-holder">
-                            <img alt="background" src="img/blog-4.jpg" />
-                        </div>
-                        <div class="article__title">
-                            <span>May 9th 2016</span>
-                            <h4>Designing efficiently in the age of distraction</h4>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <!--end item-->
-        </div>
-        <!--end masonry container-->
-    </div>
-    <!--end of container-->
-</section>
-<section>
-    <div class="container">
-        <div class="row">
             <div class="col-md-10 col-lg-8">
                 <h2>All the tools you'll need</h2>
                 <p class="lead">
@@ -188,54 +101,81 @@ featured_artifacts:
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <div class="masonry masonry-blog-magazine">
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <div class="boxed boxed--lg boxed--border bg--primary masonry__promo">
+                                <div class="pos-vertical-center">
+                                    <h3>Valuable business insight delivered direct to your inbox</h3>
+                                    <p>Join over 20,000 other designers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        {% for artifact_path in page.featured_artifacts %}
+                            {% assign artifact = site.artifacts | where: "path", artifact_path | first %}
+                            <div class="col-md-4 col-12">
+                                <a class="block" href="{{ artifact.url }}">
+                                    <article class="imagebg border--round" data-scrim-bottom="8">
+                                        <div class="background-image-holder">
+                                            <img alt="background" src="{{ artifact.images[0] }}" />
+                                        </div>
+                                        <div class="article__title">
+                                            <h4>{{ artifact.title }}</h4>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <!--end item-->
+                        {% endfor %}
+                    </div>
+                    <!--end masonry container-->
+                </div>
+                <!--end masonry-->
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<section class="space--sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+                <h2>All the tools you'll need</h2>
+                <p class="lead">
+                    Whether you’re building a welcome mat for your SaaS or a clean, corporate portfolio, Stack has your design needs covered.
+                </p>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<section class="space--sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <div class="masonry">
                     <div class="masonry__container row">
                         <div class="masonry__item col-lg-4 col-md-6"></div>
-                        <div class="masonry__item col-lg-4 col-md-6" data-masonry-filter="Marketing">
-                            <article class="feature feature-1">
-                                <a href="#" class="block">
-                                    <img alt="Image" src="img/blog-2.jpg" />
-                                </a>
-                                <div class="feature__body boxed boxed--border">
-                                    <span>May 25th 2016</span>
-                                    <h5>A day in the life of a professional fitness blogger</h5>
-                                    <a href="#">
-                                        Read More
+                        {% for post in site.posts %}
+                            <div class="masonry__item col-lg-4 col-md-6" data-masonry-filter="Marketing">
+                                <article class="feature feature-1">
+                                    <a href="{{ post.url }}" class="block">
+                                        <img alt="Image" src="{{ post.image }}" />
                                     </a>
-                                </div>
-                            </article>
-                        </div>
-                        <!--end item-->
-                        <div class="masonry__item col-lg-4 col-md-6" data-masonry-filter="Marketing">
-                            <article class="feature feature-1">
-                                <a href="#" class="block">
-                                    <img alt="Image" src="img/blog-3.jpg" />
-                                </a>
-                                <div class="feature__body boxed boxed--border">
-                                    <span>May 25th 2016</span>
-                                    <h5>Small businesses that expertly leverage their online followings</h5>
-                                    <a href="#">
-                                        Read More
-                                    </a>
-                                </div>
-                            </article>
-                        </div>
-                        <!--end item-->
-                        <div class="masonry__item col-lg-4 col-md-6" data-masonry-filter="Design">
-                            <article class="feature feature-1">
-                                <a href="#" class="block">
-                                    <img alt="Image" src="img/blog-4.jpg" />
-                                </a>
-                                <div class="feature__body boxed boxed--border">
-                                    <span>May 25th 2016</span>
-                                    <h5>Designing efficiently in the age of distraction</h5>
-                                    <a href="#">
-                                        Read More
-                                    </a>
-                                </div>
-                            </article>
-                        </div>
-                        <!--end item-->
+                                    <div class="feature__body boxed boxed--border bg-black">
+                                        <span>{{ post.date | date_to_string }}</span>
+                                        <h5>{{ post.title }}</h5>
+                                        <a href="{{ post.url }}">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!--end item-->
+                        {% endfor %}
                     </div>
                     <!--end of masonry container-->
                 </div>
