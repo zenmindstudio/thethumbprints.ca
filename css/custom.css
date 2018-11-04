@@ -45,7 +45,7 @@ main {
 }
 
 @media all and (min-width: 768px) {
-  .home #menu1 {
+  #menu1 {
     display: none;
   }
 }
@@ -213,6 +213,10 @@ img.cover-logo {
 }
 
 /**! 34. Bars **/
+.bar:not([class*='visible-']) + .bar {
+  margin-top: 0;
+}
+
 @media all and (max-width: 767px) {
   .bar__module {
     margin-bottom: 0;
