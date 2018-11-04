@@ -29,12 +29,6 @@ main {
   top: 0;
 }
 
-@media all and (max-width: 767px) {
-  .bar .logo {
-    max-height: 3em;
-  }
-}
-
 .bar-2 .logo {
   position: static;
   transform: none;
@@ -42,6 +36,18 @@ main {
 
 .bar .menu-horizontal {
   top: 0;
+}
+
+@media all and (max-width: 767px) {
+  .bar .logo {
+    max-height: 3em;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .home #menu1 {
+    display: none;
+  }
 }
 
 @media all and (min-width: 990px) {
