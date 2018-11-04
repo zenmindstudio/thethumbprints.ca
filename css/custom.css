@@ -1,15 +1,11 @@
 /*! Place your custom styles here */
 body {
   background: #000;
+  overflow-x: hidden;
 }
 
 main {
   min-height: calc(100vh - 110px - 158px);
-}
-
-.home-slider-text {
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #menu2 {
@@ -33,6 +29,12 @@ main {
   top: 0;
 }
 
+@media all and (max-width: 767px) {
+  .bar .logo {
+    max-height: 3em;
+  }
+}
+
 .bar-2 .logo {
   position: static;
   transform: none;
@@ -53,8 +55,11 @@ a:hover {
   text-decoration: none;
 }
 
-/* Stack Links */
+hr {
+  border-color: rgba(223, 144, 43, 0.4);
+}
 
+/* Stack Links */
 .imagebg:not(.image--light) a {
   color: #fdf9e3;
 }
@@ -63,11 +68,10 @@ a:hover {
   color: #a97c50;
 }
 
-/* Colors  */
+/* Images */
 body,
 article .article__body p,
 article .article__body ul,
-.imagebg:not(.image--light) h1,
 .imagebg:not(.image--light) h2,
 .imagebg:not(.image--light) h3,
 .imagebg:not(.image--light) h4,
@@ -80,6 +84,11 @@ article .article__body ul,
   color: #fdf9e3;
 }
 
+.imagebg:not(.image--light) h1 {
+  color: #df902b;
+}
+
+/* Colors  */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 .menu-horizontal > li > a, .menu-horizontal > li > span,
 .menu-horizontal > li > .modal-instance > .modal-trigger {
@@ -153,8 +162,53 @@ a:hover {
   border-top: none;
 }
 
-/*! -- Stack Bars -- */
+/* Stack Bars */
 .menu-horizontal > li > a,
 .menu-horizontal > li > .modal-instance > a {
   font-weight: 600;
+}
+
+/*! -- Sliders Flickity -- */
+@media all and (max-width: 767px) {
+  section.slider[class*='height-'] .slides .flickity-slider > li {
+    height: 100vh;
+  }
+}
+
+/*! -- Stack Covers -- */
+.home-slider-text {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+img.cover-logo {
+  width: 50%;
+}
+
+@media all and (max-width: 767px) {
+  .home-slider-text {
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  img.cover-logo {
+    margin-bottom: 4.1785714335em;
+    width: 75%;
+  }
+
+  .cover.fullscreen-on-mobile {
+    min-height: 100vh;
+  }
+}
+
+/*! -- Stack Masonry -- */
+.masonry__item:not(:empty) {
+  margin-bottom: 40px;
+}
+
+/**! 34. Bars **/
+@media all and (max-width: 767px) {
+  .bar__module {
+    margin-bottom: 0;
+  }
 }

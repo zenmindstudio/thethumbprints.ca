@@ -33,21 +33,21 @@ featured_artifacts:
     <div class="container pos-absolute home-slider-text">
         <div class="row">
             <div class="col-md-8">
-                <img alt="{{ site.title }} logo" class="unmarg--bottom w-50" src="{{ site.logo_light }}" />
+                <img alt="{{ site.title }} logo" class="cover-logo mb-md-0" src="{{ site.logo_light }}" />
             </div>
         </div>
         <!--end of row-->
         <div class="row">
-            <div class="col-6">
+            <div class="col-11 col-md-6">
               <div class="row">
                 <div class="col">
                     <a href="/about">About</a>
                 </div>
                 <div class="col">
-                    <a href="#">Gallery</a>
+                    <a href="/gallery">Gallery</a>
                 </div>
                 <div class="col">
-                    <a href="#">Contact</a>
+                    <a href="/contact">Contact</a>
                 </div>
                 <div class="col">
                     <a href="/blog">Blog</a>
@@ -59,13 +59,13 @@ featured_artifacts:
     </div>
     <!--end of container-->
 </section>
-<section class="cover height-100 imagebg parallax" data-overlay="4">
+<section class="fullscreen-on-mobile cover height-100 imagebg parallax" data-overlay="4">
     <div class="background-image-holder">
         <img alt="background" src="{{ page.about_us.image }}" />
     </div>
     <div class="container pos-vertical-center">
         <div class="row">
-          <div class="col-md-6 col-lg-5 mt-0">
+          <div class="col-11 col-md-6 col-lg-5 mt-0">
               <h1>
                   Streamline your workflow with Stack
               </h1>
@@ -104,7 +104,10 @@ featured_artifacts:
                 <div class="masonry masonry-blog-magazine">
                     <div class="row">
                         <div class="col-md-8 col-12">
-                            <div class="boxed boxed--lg boxed--border bg--primary masonry__promo">
+                            <div class="boxed boxed--lg imagebg masonry__promo" data-overlay="2">
+                                <div class="background-image-holder">
+                                    <img alt="background" src="/uploads/gallery-cover-image.jpg" />
+                                </div>
                                 <div class="pos-vertical-center">
                                     <h3>Valuable business insight delivered direct to your inbox</h3>
                                     <p>Join over 20,000 other designers</p>
@@ -114,7 +117,7 @@ featured_artifacts:
                         <!--end item-->
                         {% for artifact_path in page.featured_artifacts %}
                             {% assign artifact = site.artifacts | where: "path", artifact_path | first %}
-                            <div class="col-md-4 col-12">
+                            <div class="mb-3 col-md-4 col-12">
                                 <a class="block" href="{{ artifact.url }}">
                                     <article class="imagebg border--round" data-scrim-bottom="8">
                                         <div class="background-image-holder">
@@ -152,7 +155,7 @@ featured_artifacts:
     </div>
     <!--end of container-->
 </section>
-<section class="space--sm">
+<section class="space--xxs">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -160,7 +163,7 @@ featured_artifacts:
                     <div class="masonry__container row">
                         <div class="masonry__item col-lg-4 col-md-6"></div>
                         {% for post in site.posts %}
-                            <div class="masonry__item col-lg-4 col-md-6" data-masonry-filter="Marketing">
+                            <div class="masonry__item col-lg-4 col-md-6">
                                 <article class="feature feature-1">
                                     <a href="{{ post.url }}" class="block">
                                         <img alt="Image" src="{{ post.image }}" />

@@ -324,7 +324,7 @@ body {
 }
 @media all and (max-width: 767px) {
   .text-center-xs {
-    text-align: center;
+    text-align: center !important;
   }
   .text-left-xs {
     text-align: left;
@@ -3195,7 +3195,7 @@ form[action*='list-manage.com'] .small-meta {
   top: 6px;
 }
 .bar:not([class*='visible-']) + .bar {
-  margin-top: 0.92857143em;
+  margin-top: 0;
 }
 .bar.bar--xs {
   padding: 0.46428571em 0;
