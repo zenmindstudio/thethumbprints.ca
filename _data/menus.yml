@@ -1,6 +1,6 @@
 ---
 header:
-- url: "/about"
+- url: "/about/"
   title: About
   identifier: about
   weight: 1

@@ -1,83 +1,30 @@
-/*! Place your custom styles here */
-body {
-  background: #000;
-  overflow-x: hidden;
-}
-
-main {
-  min-height: calc(100vh - 110px - 158px);
-}
-
-#menu2 {
-  background-color: #000;
-}
-
-.home #menu2 {
-  display: none;
-}
-
-.home #menu2.bar.pos-fixed {
-  display: block;
-}
-
-.bar {
-  padding: 0.92857143em 0;
-}
-
-.bar .logo {
-  max-height: 6em;
-  top: 0;
-}
-
-.bar-2 .logo {
-  position: static;
-  transform: none;
-}
-
-.bar .menu-horizontal {
-  top: 0;
-}
-
-@media all and (max-width: 767px) {
-  .bar .logo {
-    max-height: 3em;
-  }
-}
-
-@media all and (min-width: 768px) {
-  #menu1 {
-    display: none;
-  }
-}
-
-@media all and (min-width: 990px) {
-  .menu-horizontal li:not(:last-child) {
-    margin-right: 3.71428572em;
-  }
-}
-
-/* Typography */
-a:hover {
-  text-decoration: none;
-}
-
+/**! 02. Typography **/
 hr {
   border-color: rgba(223, 144, 43, 0.4);
 }
 
-/* Stack Links */
-.imagebg:not(.image--light) a {
+body {
   color: #fdf9e3;
 }
 
-.imagebg:not(.image--light) a:hover {
-  color: #a97c50;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.menu-horizontal > li > a, .menu-horizontal > li > span,
+.menu-horizontal > li > .modal-instance > .modal-trigger {
+  color: #df902b;
 }
 
-/* Images */
-body,
-article .article__body p,
-article .article__body ul,
+/**! 03. Position **/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/**! 05. Images **/
 .imagebg:not(.image--light) h2,
 .imagebg:not(.image--light) h3,
 .imagebg:not(.image--light) h4,
@@ -85,8 +32,7 @@ article .article__body ul,
 .imagebg:not(.image--light) h6,
 .imagebg:not(.image--light) p,
 .imagebg:not(.image--light) ul,
-.imagebg:not(.image--light) blockquote,
-.lead {
+.imagebg:not(.image--light) blockquote {
   color: #fdf9e3;
 }
 
@@ -94,11 +40,41 @@ article .article__body ul,
   color: #df902b;
 }
 
-/* Colors  */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
-.menu-horizontal > li > a, .menu-horizontal > li > span,
-.menu-horizontal > li > .modal-instance > .modal-trigger {
-  color: #df902b;
+/**! 06. Buttons **/
+.btn--primary, .btn--primary:visited {
+  background: #df902b;
+  border-color: #df902b;
+}
+
+.btn--primary:hover {
+  background: #8a540d;
+  border-color: #8a540d;
+}
+
+/**! 10. Menus **/
+.menu-horizontal > li:not(:hover) > a, .menu-horizontal > li:not(:hover) > span,
+.menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
+  opacity: 1;
+}
+
+.menu-horizontal > li > a:hover,
+.menu-horizontal > li > span:hover,
+.menu-horizontal > li > .modal-instance > .modal-trigger:hover {
+  color: #8a540d;
+}
+
+.menu-horizontal > li.current > a {
+  text-decoration: underline;
+}
+
+/**! 17. Boxes **/
+.boxed.boxed--border {
+  border: 0.5px solid rgba(223, 144, 43, 0.4);
+}
+
+/**! 26. Colors **/
+body {
+  background: #000;
 }
 
 a {
@@ -112,48 +88,122 @@ a:hover {
   color: #794809;
 }
 
-.menu-horizontal > li:not(:hover) > a, .menu-horizontal > li:not(:hover) > span,
-.menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
-  opacity: 1;
-}
-
-.lead {
-  font-weight: 400;
-}
-
 .bg--dark {
   background: #3c2415;
 }
 
-/* Slider */
+/**! 34. Bars **/
+.bar {
+  padding: 0.92857143em 0;
+}
+
+.bar .logo {
+  max-height: 6em;
+  top: 0;
+}
+
+.bar .menu-horizontal {
+  top: 0;
+}
+
+.bar:not([class*='visible-']) + .bar {
+  margin-top: 0;
+}
+
+@media all and (max-width: 767px) {
+  .bar__module {
+    margin-bottom: 0;
+  }
+}
+
+
+/*! -- Stack Typography -- */
+.lead {
+  color: #fdf9e3;
+}
+
+/*! -- Stack Bars -- */
+.bar-2 .logo {
+  position: static;
+  transform: none;
+}
+
+@media all and (max-width: 767px) {
+  .bar .logo {
+    max-height: 3em;
+  }
+}
+
+@media all and (min-width: 990px) {
+  .menu-horizontal li:not(:last-child) {
+    margin-right: 3.71428572em;
+  }
+}
+
+main {
+  min-height: calc(100vh - 110px - 158px);
+}
+
+#menu1,
+#menu2 {
+  background-color: #000;
+}
+
+.home #menu1 {
+  display: none;
+  position: fixed;
+  width: 100%;
+}
+
+.home #menu1.bar.pos-fixed {
+  display: block;
+  z-index: 1000;
+}
+
+.home #menu2 {
+  display: none;
+  position: fixed;
+}
+
+.home #menu2.bar.pos-fixed {
+  display: block;
+}
+
+@media all and (min-width: 768px) {
+  #menu1 {
+    display: none;
+  }
+}
+
+/*! -- Stack Blog -- */
+article .article__body p,
+article .article__body ul {
+  color: #fdf9e3;
+}
+
+.masonry-blog-list article {
+  border-bottom: 1px solid rgba(223, 144, 43, 0.4);
+}
+
+/*! -- Stack Links -- */
+a:hover {
+  text-decoration: none;
+}
+
+.imagebg:not(.image--light) a {
+  color: #fdf9e3;
+}
+
+.imagebg:not(.image--light) a:hover {
+  color: #a97c50;
+}
+
+/*! -- Stack Sliders -- */
 .slider.boxed--border .slides li {
   border: none;
 }
 
-/* Menus */
-.menu-horizontal > li > a:hover,
-.menu-horizontal > li > span:hover,
-.menu-horizontal > li > .modal-instance > .modal-trigger:hover {
-  color: #8a540d;
-}
-
-/* Buttons */
-.btn--primary, .btn--primary:visited {
-  background: #df902b;
-  border-color: #df902b;
-}
-
-.btn--primary:hover {
-  background: #8a540d;
-  border-color: #8a540d;
-}
-
-/* Boxes */
-.boxed.boxed--border {
-  border: 0.5px solid rgba(223, 144, 43, 0.4);
-}
-
-/* Cards */
+/*! -- Stack Cards -- */
 .card-2 .card__body,
 .card-2 .card__bottom {
   border: 1px solid rgba(223, 144, 43, 0.4);
@@ -163,12 +213,12 @@ a:hover {
   border-top: none;
 }
 
-/* Stack Features Small */
+/*! -- Stack Features Small -- */
 .feature__body.boxed.boxed--border {
   border-top: none;
 }
 
-/* Stack Bars */
+/*! -- Stack Bars -- */
 .menu-horizontal > li > a,
 .menu-horizontal > li > .modal-instance > a {
   font-weight: 600;
@@ -210,15 +260,4 @@ img.cover-logo {
 /*! -- Stack Masonry -- */
 .masonry__item:not(:empty) {
   margin-bottom: 40px;
-}
-
-/**! 34. Bars **/
-.bar:not([class*='visible-']) + .bar {
-  margin-top: 0;
-}
-
-@media all and (max-width: 767px) {
-  .bar__module {
-    margin-bottom: 0;
-  }
 }
