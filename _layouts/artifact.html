@@ -31,14 +31,14 @@ layout: default
                     <ul class="slides">
                         {% for image in page.images %}
                             <li>
-                                <img alt="Image" src="{{ image }}" />
+                                <img alt="Image" src="{{ image }}" data-zoom="{{ image }}" />
                             </li>
                         {% endfor %}
                     </ul>
                 </div>
                 <!--end slider-->
             </div>
-            <div class="col-md-5 col-lg-4">
+            <div class="col-md-5 col-lg-6 artifact-information">
                 <h2>{{ page.title }}</h2>
                 <p>
                     {{ page.description }}
