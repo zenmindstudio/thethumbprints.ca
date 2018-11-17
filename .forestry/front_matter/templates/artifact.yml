@@ -22,13 +22,13 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/musicians.md
 - _artifacts/group-of-monkeys.md
 - _artifacts/horn-trumpet.md
 - _artifacts/face-mask.md
 - _artifacts/tribals-head-gears.md
 - _artifacts/knock-knock.md
 - _artifacts/antique-lamp.md
-- _artifacts/musicians.md
 - _artifacts/stylish-turtle-ash-try-and-smoke-stick-holder.md
 - _artifacts/raptors.md
 - _artifacts/twonicorn.md

@@ -10,6 +10,7 @@ description: 'Music is an integral part of the tribal culture since they have in
 origin: ''
 dimensions: ''
 images:
-- "/uploads/20181019_212221274_iOS.jpg"
+- "/v1542456202/20181019_212221274_iOS.jpg"
+id: ''
 
 ---
