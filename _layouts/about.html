@@ -6,10 +6,8 @@ layout: default
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
-                <h2>Built on passion and ingenuity</h2>
-                <p class="lead">
-                    Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support. Recognised and awarded by Envato on multiple occasions for producing consistently outstanding products, it's no wonder over 20,000 customers enjoy using Medium Rare templates.
-                </p>
+                <h2>{{ page.title }}</h2>
+                {{ page.content | markdownify }}
             </div>
         </div>
         <!--end of row-->

@@ -68,7 +68,7 @@ featured_artifacts:
 </section>
 <section class="fullscreen-on-mobile cover height-100 imagebg parallax" data-overlay="4">
     <div class="background-image-holder">
-        <img alt="background" src="{{ page.about_us.image }}" />
+        <img alt="background" src="{{ site.cloudinary_url }}{{ page.about_us.image }}" />
     </div>
     <div class="container pos-vertical-center">
         <div class="row">
@@ -94,9 +94,9 @@ featured_artifacts:
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
-                <h2>All the tools you'll need</h2>
+                <h2>{{ page.featured_artifacts.title }}</h2>
                 <p class="lead">
-                    Whether you’re building a welcome mat for your SaaS or a clean, corporate portfolio, Stack has your design needs covered.
+                    {{ page.featured_artifacts.description }}
                 </p>
             </div>
         </div>
@@ -113,22 +113,22 @@ featured_artifacts:
                         <div class="col-md-8 col-12">
                             <div class="boxed boxed--lg imagebg masonry__promo" data-overlay="2">
                                 <div class="background-image-holder">
-                                    <img alt="background" src="/uploads/gallery-cover-image.jpg" />
+                                    <img alt="background" src="{{ site.cloudinary_url }}{{ page.featured_artifacts.section_image.image }}" />
                                 </div>
                                 <div class="pos-vertical-center">
-                                    <h3>Valuable business insight delivered direct to your inbox</h3>
-                                    <p>Join over 20,000 other designers</p>
+                                    <h3>{{ page.featured_artifacts.section_image.title }}</h3>
+                                    <p>{{ page.featured_artifacts.section_image.description }}</p>
                                 </div>
                             </div>
                         </div>
                         <!--end item-->
-                        {% for artifact_path in page.featured_artifacts %}
+                        {% for artifact_path in page.featured_artifacts.artifacts %}
                             {% assign artifact = site.artifacts | where: "path", artifact_path | first %}
                             <div class="mb-3 col-md-4 col-12">
                                 <a class="block" href="{{ artifact.url }}">
                                     <article class="imagebg border--round" data-scrim-bottom="8">
                                         <div class="background-image-holder">
-                                            <img alt="background" src="{{ artifact.images[0] }}" />
+                                            <img alt="background" src="{{ site.cloudinary_url }}/w_700{{ artifact.images[0] }}" />
                                         </div>
                                         <div class="article__title">
                                             <h4>{{ artifact.title }}</h4>
@@ -152,9 +152,9 @@ featured_artifacts:
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-lg-8">
-                <h2>All the tools you'll need</h2>
+                <h2>{{ page.blog_featured_articles.title }}</h2>
                 <p class="lead">
-                    Whether you’re building a welcome mat for your SaaS or a clean, corporate portfolio, Stack has your design needs covered.
+                    {{ page.blog_featured_articles.description }}
                 </p>
             </div>
         </div>
@@ -173,7 +173,7 @@ featured_artifacts:
                             <div class="masonry__item col-lg-4 col-md-6">
                                 <article class="feature feature-1">
                                     <a href="{{ post.url }}" class="block">
-                                        <img alt="Image" src="{{ post.image }}" />
+                                        <img alt="Image" src="{{ site.cloudinary_url }}/w_700{{ post.image }}" />
                                     </a>
                                     <div class="feature__body boxed boxed--border bg-black">
                                         <span>{{ post.date | date_to_string }}</span>

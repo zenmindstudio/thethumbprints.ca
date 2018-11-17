@@ -31,7 +31,7 @@ layout: default
                     <ul class="slides">
                         {% for image in page.images %}
                             <li>
-                                <img alt="Image" src="{{ image }}" data-zoom="{{ image }}" />
+                                <img alt="Image" src="{{ site.cloudinary_url }}/w_1080{{ image }}" data-zoom="{{ site.cloudinary_url }}{{ image }}" />
                             </li>
                         {% endfor %}
                     </ul>

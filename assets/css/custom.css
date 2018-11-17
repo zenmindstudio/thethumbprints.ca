@@ -9,7 +9,9 @@ body {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 .menu-horizontal > li > a, .menu-horizontal > li > span,
-.menu-horizontal > li > .modal-instance > .modal-trigger {
+.menu-horizontal > li > .modal-instance > .modal-trigger,
+.bar--transparent:not(.bar--dark):not(.pos-fixed) .menu-horizontal > li > a,
+.bar--transparent:not(.bar--dark):not(.pos-fixed) .menu-horizontal > li > span {
   color: #df902b;
 }
 
@@ -51,22 +53,6 @@ footer {
   border-color: #8a540d;
 }
 
-/**! 10. Menus **/
-.menu-horizontal > li:not(:hover) > a, .menu-horizontal > li:not(:hover) > span,
-.menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
-  opacity: 1;
-}
-
-.menu-horizontal > li > a:hover,
-.menu-horizontal > li > span:hover,
-.menu-horizontal > li > .modal-instance > .modal-trigger:hover {
-  color: #8a540d;
-}
-
-.menu-horizontal > li.current > a {
-  text-decoration: underline;
-}
-
 /**! 17. Boxes **/
 .boxed.boxed--border {
   border: 0.5px solid rgba(223, 144, 43, 0.4);
@@ -93,12 +79,7 @@ a:hover {
 }
 
 /**! 34. Bars **/
-.bar {
-  padding: 0.92857143em 0;
-}
-
 .bar .logo {
-  max-height: 6em;
   top: 0;
 }
 
@@ -106,16 +87,23 @@ a:hover {
   top: 0;
 }
 
-.bar:not([class*='visible-']) + .bar {
-  margin-top: 0;
+.bar--transparent:not(.bar--dark) .logo-dark {
+  display: none;
 }
 
-@media all and (max-width: 767px) {
-  .bar__module {
-    margin-bottom: 0;
+@media all and (min-width: 991px) {
+  .home .bar {
+    display: none;
+  }
+
+  .bar.pos-fixed:not([class*='bg-']) {
+    background: black;
+  }
+
+  .home .bar.pos-fixed {
+    display: block;
   }
 }
-
 
 /*! -- Stack Typography -- */
 .lead {
@@ -123,56 +111,8 @@ a:hover {
 }
 
 /*! -- Stack Bars -- */
-.bar-2 .logo {
-  position: static;
-  transform: none;
-}
-
-@media all and (max-width: 767px) {
-  .bar .logo {
-    max-height: 3em;
-  }
-}
-
-@media all and (min-width: 990px) {
-  .menu-horizontal li:not(:last-child) {
-    margin-right: 3.71428572em;
-  }
-}
-
-main {
-  min-height: calc(100vh - 110px - 158px);
-}
-
-#menu1,
-#menu2 {
-  background-color: #000;
-}
-
-.home #menu1 {
-  display: none;
-  position: fixed;
-  width: 100%;
-}
-
-.home #menu1.bar.pos-fixed {
-  display: block;
-  z-index: 1000;
-}
-
-.home #menu2 {
-  display: none;
-  position: fixed;
-}
-
-.home #menu2.bar.pos-fixed {
-  display: block;
-}
-
-@media all and (min-width: 768px) {
-  #menu1 {
-    display: none;
-  }
+.bar .logo {
+  max-height: calc(1.85714286em * 2);
 }
 
 /*! -- Stack Blog -- */

@@ -15,7 +15,7 @@ permalink: /gallery
                         <div class="card card-2 text-center">
                             <div class="card__top">
                                 <a href="{{ artifact.url }}">
-                                    <img alt="Image" src="{{ artifact.images.first }}">
+                                    <img alt="Image" src="{{ site.cloudinary_url }}/w_700{{ artifact.images.first }}">
                                 </a>
                             </div>
                             <div class="card__body card__bottom">
