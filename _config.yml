@@ -24,6 +24,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 logo_light: "/uploads/logo-light.png"
 logo_dark: "/uploads/logo-dark.png"
+cloudinary_url: "https://res.cloudinary.com/mehtavd/image/upload/"
 
 # Collections
 collections:

@@ -14,10 +14,17 @@ blog_featured_articles:
   title: ''
   description: ''
 featured_artifacts:
-- _artifacts/antler-deer-clouple.md
-- _artifacts/queen.md
-- _artifacts/musicians.md
-- _artifacts/knock-knock.md
+  title: ''
+  description: ''
+  section_image:
+    image: "/v1542456196/gallery-cover-image.jpg"
+    title: ''
+    description: ''
+  artifacts:
+  - _artifacts/antler-deer-clouple.md
+  - _artifacts/queen.md
+  - _artifacts/musicians.md
+  - _artifacts/knock-knock.md
 
 ---
 <section class="cover height-100 imagebg text-center slider slider--ken-burns">
@@ -25,7 +32,7 @@ featured_artifacts:
         {% for image in page.slider.images %}
           <li class="imagebg" data-overlay="4">
               <div class="background-image-holder background--top">
-                  <img alt="background" src="{{ image }}" />
+                  <img alt="background" src="{{ site.cloudinary_url }}{{ image }}" />
               </div>
           </li>
         {% endfor %}
@@ -67,14 +74,14 @@ featured_artifacts:
         <div class="row">
           <div class="col-11 col-md-6 col-lg-5 mt-0">
               <h1>
-                  Streamline your workflow with Stack
+                  {{ page.about_us.title }}
               </h1>
               <p class="lead">
-                  Build lean, beautiful websites with a clean and contemporary look to suit a range of purposes
+                  {{ page.about_us.description }}
               </p>
-              <a class="btn btn--primary type--uppercase" href="#">
+              <a class="btn btn--primary type--uppercase" href="/about/">
                   <span class="btn__text">
-                      Try Builder Live
+                      About Us
                   </span>
               </a>
           </div>
