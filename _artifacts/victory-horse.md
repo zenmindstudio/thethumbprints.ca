@@ -9,6 +9,7 @@ description: Use of horse in conquests has been very popular across the world an
 origin: ''
 dimensions: ''
 images:
-- "/uploads/20181019_222158357_iOS.jpg"
+- "/v1542456201/20181019_222158357_iOS.jpg"
+id: ''
 
 ---
