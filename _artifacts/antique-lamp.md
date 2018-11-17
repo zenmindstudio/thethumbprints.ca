@@ -9,6 +9,7 @@ description: 'Bastar is a mineral rich area and the original inhabitants started
 origin: ''
 dimensions: ''
 images:
-- "/uploads/63575f59-891a-4487-b5c0-d7478c3517c0.jpg"
+- "/v1542456200/63575f59-891a-4487-b5c0-d7478c3517c0.jpg"
+id: ''
 
 ---
