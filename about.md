@@ -6,7 +6,7 @@ permalink: "/about/"
 ---
 We very strongly believe that if we go back to our roots, if we mine that inner area, we bring out something that is stubbornly authentic - like our thumbprints.
 
-Thumbprints was an idea that came up on a late summer evening discussion in Coquitlam between Ankit who is a Dentist by profession but has an eye for good art and Vishal who is an Engineer and has travelled the world extensively seeing various art forms.
+Thumbprints was an idea that came up on a late summer evening discussion in Coquitlam between Ankit who is a Dentist by profession but has an eye for good art, Radhika who is a Physiotherapist and has been passionate about handicrafts and Vishal who is an Engineer and has traveled the world extensively seeing various art forms.
 
 We decided to bring the original handmade art forms by artists who have the magical skill of transferring their imagination and emotions into forms using their hands. We seek out art and artists, not just in the urban or small towns but in deep jungles and remote areas where these art forms have existed for centuries.
 
