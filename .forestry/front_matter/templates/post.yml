@@ -9,3 +9,5 @@ fields:
 - type: file
   name: image
   label: Image
+pages:
+- _posts/rogan-art-exquisite-beautiful-and-mystic.md
