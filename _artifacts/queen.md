@@ -9,6 +9,7 @@ description: 'This is an artists impression of a tribal queen who rules the trib
 origin: ''
 dimensions: ''
 images:
-- "/uploads/20181019_222623695_iOS.jpg"
+- "/v1542456201/20181019_222623695_iOS.jpg"
+id: ''
 
 ---

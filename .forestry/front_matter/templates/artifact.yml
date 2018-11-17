@@ -22,6 +22,7 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/queen.md
 - _artifacts/musicians.md
 - _artifacts/group-of-monkeys.md
 - _artifacts/horn-trumpet.md
@@ -37,5 +38,4 @@ pages:
 - _artifacts/antler-deer-clouple.md
 - _artifacts/holy-cow.md
 - _artifacts/couple.md
-- _artifacts/queen.md
 - _artifacts/victory-horse.md
