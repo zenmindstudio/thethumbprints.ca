@@ -1,18 +1,19 @@
 ---
 layout: about
 title: About
-permalink: /about/
+permalink: "/about/"
+
 ---
+We very strongly believe that if we go back to our roots, if we mine that inner area, we bring out something that is stubbornly authentic - like our thumbprints.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Thumbprints was an idea that came up on a late summer evening discussion in Coquitlam between Ankit who is a Dentist by profession but has an eye for good art and Vishal who is an Engineer and has travelled the world extensively seeing various art forms.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+We decided to bring the original handmade art forms by artists who have the magical skill of transferring their imagination and emotions into forms using their hands. We seek out art and artists, not just in the urban or small towns but in deep jungles and remote areas where these art forms have existed for centuries.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+We would like to help these artists so that their art form evolves and flourishes and they don’t become have to migrate to cities and towns for menial jobs and lose their inherited skills in the process.
 
+Thumbprints believes in the richness and feeling of exclusivity when one sees a piece of original piece of art made by hand. Letting this art inhabit our living and working spaces brings positive energies and inspiration.
 
-[jekyll-organization]: https://github.com/jekyll
+At Thumbprints, we want everyone to see the world from the view point of an artist. It's more wonderful than any dream made or paid for in factories or offices.
+
+When buying from us, you are assured of authenticity as the art works are personally selected and we travel to the location to get them for you.
