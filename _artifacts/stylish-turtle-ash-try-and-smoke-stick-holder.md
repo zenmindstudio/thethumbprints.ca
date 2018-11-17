@@ -1,5 +1,5 @@
 ---
-title: Stylish Turtle Ash Try and Smoke Stick  Holder
+title: Stylish Turtle Ash Try and Smoke Stick Holder
 date: 2018-10-26 07:16:28 +0000
 description: This is a very artistic and cool looking ash tray with three smoke stick
   holders. It makes a great style statement having it on the table. The artists who
