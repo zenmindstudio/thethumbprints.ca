@@ -9,7 +9,7 @@ description: This evil looking face mask is placed on top of the front door of t
 origin: ''
 dimensions: ''
 images:
-- "/uploads/IMG_0452-2.JPG"
+- "/v1542456201/IMG_0452.jpg"
 id: ''
 
 ---
