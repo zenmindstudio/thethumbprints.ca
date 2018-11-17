@@ -7,6 +7,7 @@ description: A solid brass face mask with a big broad smile, it can be hung on a
 origin: ''
 dimensions: ''
 images:
-- "/uploads/20181024_190734751_iOS.jpg"
+- "/v1542456203/20181024_190734751_iOS.jpg"
+id: ''
 
 ---
