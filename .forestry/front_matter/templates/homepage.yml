@@ -47,14 +47,16 @@ fields:
     - type: textarea
       name: description
       label: Description
-  - type: select
+  - type: list
     name: artifacts
+    label: Artifacts
     config:
+      min: '4'
+      max: '4'
+      use_select: true
       source:
         type: pages
         section: artifacts
-        file: _artifacts/knock-knock.md
-    label: Artifacts
   label: Featured Artifacts
   name: featured_artifacts
 - type: field_group
