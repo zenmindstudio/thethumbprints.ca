@@ -11,6 +11,7 @@ description: 'For centuries cow has been a very important economic part of the p
 origin: ''
 dimensions: ''
 images:
-- "/uploads/20181019_221955633_iOS.jpg"
+- "/v1542456202/20181019_221955633_iOS.jpg"
+id: ''
 
 ---
