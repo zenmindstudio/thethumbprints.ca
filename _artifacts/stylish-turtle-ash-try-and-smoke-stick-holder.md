@@ -9,6 +9,7 @@ description: This is a very artistic and cool looking ash tray with three smoke 
 origin: ''
 dimensions: ''
 images:
-- "/uploads/20181019_214046231_iOS.jpg"
+- "/v1542456203/20181019_214046231_iOS.jpg"
+id: ''
 
 ---

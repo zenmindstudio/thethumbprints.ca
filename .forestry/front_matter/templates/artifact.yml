@@ -22,6 +22,7 @@ fields:
   name: images
   label: Images
 pages:
+- _artifacts/stylish-turtle-ash-try-and-smoke-stick-holder.md
 - _artifacts/queen.md
 - _artifacts/musicians.md
 - _artifacts/group-of-monkeys.md
@@ -30,7 +31,6 @@ pages:
 - _artifacts/tribals-head-gears.md
 - _artifacts/knock-knock.md
 - _artifacts/antique-lamp.md
-- _artifacts/stylish-turtle-ash-try-and-smoke-stick-holder.md
 - _artifacts/raptors.md
 - _artifacts/twonicorn.md
 - _artifacts/smiley-face-mask.md
