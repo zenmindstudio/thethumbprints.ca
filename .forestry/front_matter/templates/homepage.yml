@@ -26,16 +26,37 @@ fields:
   - type: file
     name: image
     label: Image
-- type: list
-  name: featured_artifacts
+- type: field_group
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: description
+    label: Description
+  - type: field_group
+    name: section_image
+    label: Section Image
+    fields:
+    - type: file
+      name: image
+      label: Image
+    - type: text
+      name: title
+      label: Title
+    - type: textarea
+      name: description
+      label: Description
+  - type: select
+    name: artifacts
+    config:
+      source:
+        type: pages
+        section: artifacts
+        file: _artifacts/knock-knock.md
+    label: Artifacts
   label: Featured Artifacts
-  config:
-    max: '4'
-    min: '4'
-    use_select: true
-    source:
-      type: pages
-      section: artifacts
+  name: featured_artifacts
 - type: field_group
   name: blog_featured_articles
   label: Blog Featured Articles
