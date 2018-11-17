@@ -51,7 +51,7 @@ fields:
     name: artifacts
     label: Artifacts
     config:
-      min: '4'
+      min: ''
       max: '4'
       use_select: true
       source:
