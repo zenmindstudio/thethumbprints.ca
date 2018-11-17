@@ -55,7 +55,7 @@ fields:
       max: '4'
       use_select: true
       source:
-        type: documents
+        type: pages
         section: artifacts
   label: Featured Artifacts
   name: featured_artifacts
