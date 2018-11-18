@@ -53,6 +53,13 @@ footer {
   border-color: #8a540d;
 }
 
+/**! 10. Menus **/
+.menu-horizontal > li:not(:hover) > a,
+.menu-horizontal > li:not(:hover) > span,
+.menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
+  opacity: 1;
+}
+
 /**! 17. Boxes **/
 .boxed.boxed--border {
   border: 0.5px solid rgba(223, 144, 43, 0.4);
@@ -91,15 +98,81 @@ a:hover {
   display: none;
 }
 
-@media all and (min-width: 991px) {
-  .home .bar {
+@media all and (max-width: 767px) {
+  .bar.bar--mobile-sticky[data-scroll-class*='fixed'].pos-fixed {
+    position: fixed;
+    width: 100%;
+    background: black;
+    z-index: 999;
+  }
+  .bar.bar--mobile-sticky[data-scroll-class*='fixed'] + .bar.pos-fixed {
+    top: calc(3.71428571em * 1.5);
+    position: fixed;
+    width: 100%;
+    background: black;
+    z-index: 999;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .bar__module:not(:only-child) {
+    display: inline-block;
+  }
+  .bar__module:not(:last-child) {
+    margin-right: 0.92857143em;
+  }
+  .bar--transparent:not(.bar--dark) {
+    background: none;
+  }
+  .bar--transparent:not(.bar--dark) .logo-dark {
     display: none;
   }
-
+  .bar--transparent:not(.bar--dark) .logo-light {
+    display: inline-block;
+  }
+  .bar--transparent:not(.bar--dark):not(.pos-fixed) .menu-horizontal > li > a,
+  .bar--transparent:not(.bar--dark):not(.pos-fixed) .menu-horizontal > li > span {
+    color: #fff;
+  }
+  .bar--transparent:not(.bar--dark):not(.pos-fixed) .btn:not([class*='primary']) {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .bar--transparent:not(.bar--dark):not(.pos-fixed) .btn:not([class*='primary']) .btn__text {
+    color: #fff;
+  }
+  .bar--transparent:not(.bar--dark):not(.pos-fixed) .btn:not([class*='primary']):hover {
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+  .bar--absolute {
+    position: absolute;
+  }
+  .bar--absolute,
+  .pos-fixed {
+    z-index: 99;
+    width: 100%;
+  }
+  .bar.pos-fixed {
+    position: fixed;
+    top: 0;
+    animation: fadeInDown 0.3s ease-out forwards;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+  }
   .bar.pos-fixed:not([class*='bg-']) {
     background: black;
   }
-
+  .bar.pos-fixed:not([class*='bg-']) .logo-dark {
+    display: inline-block;
+  }
+  .bar.pos-fixed:not([class*='bg-']) .logo-light {
+    display: none;
+  }
+  .bar.pos-fixed.bg--dark {
+    background: #252525;
+  }
+  .home .bar {
+    display: none;
+  }
   .home .bar.pos-fixed {
     display: block;
   }
@@ -111,8 +184,17 @@ a:hover {
 }
 
 /*! -- Stack Bars -- */
+.hamburger-toggle i {
+  color: #df902b;
+}
 .bar .logo {
   max-height: calc(1.85714286em * 2);
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .bar-2 .bar__module,
+  .bar-1 .bar__module {
+    margin-bottom: 0;
+  }
 }
 
 /*! -- Stack Blog -- */

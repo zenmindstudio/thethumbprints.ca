@@ -37,6 +37,11 @@ defaults:
       type: artifacts
     values:
       layout: artifact
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 # Build settings
 markdown: kramdown

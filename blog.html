@@ -28,11 +28,11 @@ menu:
                                 </div>
                                 <!--end article title-->
                                 <div class="article__body">
-                                    <a href="#">
-                                        <img alt="Image" src="{{ post.image }}" />
+                                    <a href="{{ post.url }}">
+                                        <img alt="Image" src="{{ site.cloudinary_url }}/w_730{{ post.image }}" />
                                     </a>
                                     <p>
-                                        {{ post.description }}
+                                        {{ post.excerpt }}
                                     </p>
                                     <a href="{{ post.url }}">Continue reading &raquo;</a>
                                 </div>

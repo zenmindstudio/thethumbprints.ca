@@ -12,7 +12,7 @@ layout: default
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/artifacts">Artifacts</a>
+                        <a href="/gallery/">Artifacts</a>
                     </li>
                     <li>{{ page.title }}</li>
                 </ol>
@@ -31,7 +31,7 @@ layout: default
                     <ul class="slides">
                         {% for image in page.images %}
                             <li>
-                                <img alt="Image" src="{{ site.cloudinary_url }}/w_1080{{ image }}" data-zoom="{{ site.cloudinary_url }}{{ image }}" />
+                                <img class="artifact-image" alt="{{ page.title }}" src="{{ site.cloudinary_url }}/w_1080{{ image }}" data-zoom="{{ site.cloudinary_url }}{{ image }}" />
                             </li>
                         {% endfor %}
                     </ul>
