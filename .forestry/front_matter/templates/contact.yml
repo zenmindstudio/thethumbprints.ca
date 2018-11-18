@@ -1,6 +1,6 @@
 ---
 label: Contact
-hide_body: true
+hide_body: false
 is_partial: false
 fields:
 - type: text
@@ -12,12 +12,5 @@ fields:
 - type: text
   name: postal_address
   label: Postal Address
-- type: textarea
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Content
-  name: content
 pages:
 - contact.html
