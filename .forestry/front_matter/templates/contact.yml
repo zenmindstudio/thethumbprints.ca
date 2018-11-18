@@ -12,5 +12,3 @@ fields:
 - type: text
   name: postal_address
   label: Postal Address
-pages:
-- contact.html
