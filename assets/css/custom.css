@@ -283,3 +283,8 @@ img.cover-logo {
 .masonry__item:not(:empty) {
   margin-bottom: 40px;
 }
+
+/*! -- Stack Images -- */
+.post img:last-child {
+  margin-bottom: 1.85714286em;
+}
