@@ -99,10 +99,14 @@ featured_artifacts:
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
-                <h2>{{ page.featured_artifacts.title }}</h2>
-                <p class="lead">
-                    {{ page.featured_artifacts.description }}
-                </p>
+                {% unless page.featured_artifacts.title == '' %}
+                    <h2>{{ page.featured_artifacts.title }}</h2>
+                {% endunless %}
+                {% unless page.featured_artifacts.description == '' %}
+                    <p class="lead">
+                        {{ page.featured_artifacts.description }}
+                    </p>
+                {% endunless %}
             </div>
         </div>
         <!--end of row-->
