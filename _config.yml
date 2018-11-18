@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Thumbprints is passionate about handmade authentic and real art work and
   sourcing it from the source and making it available to the Canadian People.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.thethumbprints.ca" # the base hostname & protocol for your site, e.g. http://example.com
 logo_light: "/assets/images/logo-light.png"
 logo_dark: "/assets/images/logo-dark.png"
 logo: "/assets/images/logo-dark.png"
