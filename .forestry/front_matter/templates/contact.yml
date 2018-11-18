@@ -12,5 +12,12 @@ fields:
 - type: text
   name: postal_address
   label: Postal Address
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+  name: content
 pages:
 - contact.html
