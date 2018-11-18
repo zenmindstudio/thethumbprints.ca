@@ -12,7 +12,9 @@ layout: default
                 <p class="lead">
                     E:
                     <a href="mailto:{{ page.email_address }}">{{ page.email_address }}</a>
-                    <br /> P: <a href="tel:{{ page.contact_number }}">{{ page.contact_number }}</a>
+                    {% unless page.contact_number == '' %}
+                        <br /> P: <a href="tel:{{ page.contact_number }}">{{ page.contact_number }}</a>
+                    {% endunless %}
                 </p>
                 {{ page.content | markdownify }}
             </div>

@@ -1,7 +1,7 @@
 ---
 title: Contact
 layout: contact
-permalink: "/contact"
+permalink: "/contact/"
 email_address: info@thethumbprints.ca
 contact_number: ''
 postal_address: 'Mail Address: The Thumbprints, # 36, 1216, Johnson Street, Coquitlam,
