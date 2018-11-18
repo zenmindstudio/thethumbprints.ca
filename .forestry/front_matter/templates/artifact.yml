@@ -21,6 +21,12 @@ fields:
 - type: image_gallery
   name: images
   label: Images
+- type: number
+  name: position
+  label: Position
+  config:
+    min: '1'
+    step: '1'
 pages:
 - _artifacts/victory-horse.md
 - _artifacts/stylish-turtle-ash-try-and-smoke-stick-holder.md
