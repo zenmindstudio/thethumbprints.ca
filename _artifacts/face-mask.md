@@ -11,5 +11,4 @@ dimensions: ''
 images:
 - "/v1542463015/IMG_0452.jpg"
 id: ''
-
 ---

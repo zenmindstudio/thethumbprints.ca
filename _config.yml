@@ -34,6 +34,8 @@ collections:
   artifacts:
     permalink: "/artifact/:title/"
     output: true
+  posts:
+    permalink: "/blog/:title/"
 defaults:
   - scope:
       path: ""
