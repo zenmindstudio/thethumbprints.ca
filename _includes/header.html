@@ -19,7 +19,7 @@
         <!--end of container-->
     </div>
     <!--end bar-->
-    <nav id="menu1" class="bar bar--sm bar-1 hidden-xs {% if page.url == '/' %}bar--absolute bar--transparent{% endif %}" data-scroll-class="100px:pos-fixed">
+    <nav id="menu1" class="bar bar--sm bar-1 hidden-xs {% if page.url == '/' %}bar--absolute bar--transparent{% endif %}" data-scroll-class="200px:pos-fixed">
         <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-2 hidden-xs">
@@ -31,9 +31,9 @@
                     </div>
                     <!--end module-->
                 </div>
-                <div class="col-lg-11 col-md-10 text-right text-left-xs text-left-sm d-flex justify-content-md-end align-items-center">
+                <div class="col-lg-11 col-md-10 text-right text-left-xs text-left-sm d-flex justify-content-end align-items-center">
                     <div class="bar__module">
-                        <ul class="menu-horizontal text-left">
+                        <ul class="menu-horizontal">
                             {% for link in site.menus.header %}
                                 <li class="{% if url == link.url %}current{% endif %}">
                                     <a href="{{ link.url | absolute_url }}"{% if link.target %} target="_blank" {% endif %}>
