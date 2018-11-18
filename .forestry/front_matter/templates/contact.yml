@@ -1,0 +1,14 @@
+---
+label: Contact
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: email_address
+  label: Email Address
+- type: text
+  name: contact_number
+  label: Contact Number
+- type: text
+  name: postal_address
+  label: Postal Address
