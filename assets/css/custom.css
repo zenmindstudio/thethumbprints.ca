@@ -59,6 +59,9 @@ footer {
 .menu-horizontal > li:not(:hover) > .modal-instance > .modal-trigger {
   opacity: 1;
 }
+.menu-horizontal > li > a:hover {
+  color: #a97c50;
+}
 
 /**! 17. Boxes **/
 .boxed.boxed--border {
@@ -196,6 +199,11 @@ a:hover {
     margin-bottom: 0;
   }
 }
+@media all and (min-width: 990px) {
+  .menu-horizontal li:not(:last-child) {
+    margin-right: calc(1.23809524em * 3);
+  }
+}
 
 /*! -- Stack Blog -- */
 article .article__body p,
@@ -287,4 +295,28 @@ img.cover-logo {
 /*! -- Stack Images -- */
 .post img:last-child {
   margin-bottom: 1.85714286em;
+}
+
+/*! -- Helper Classes -- */
+.page-content {
+  padding-top: 2.78571429em;
+}
+
+/*! -- About Page -- */
+.page-content p:first-of-type {
+  color: #df902b;
+  font-size: 2.35714286em;
+  font-weight: 300;
+  line-height: 1.36363636em;
+}
+.page-content p:first-of-type:before,
+.page-content p:first-of-type:after {
+  content: '"';
+}
+@media all and (max-width: 767px) {
+  h2,
+  .h2 {
+    font-size: 1.78571429em;
+    line-height: 1.5em;
+  }
 }
