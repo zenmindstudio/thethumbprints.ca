@@ -208,6 +208,7 @@ a:hover {
 /*! -- Stack Blog -- */
 article .article__body p,
 article .article__body ul {
+  font-size: 1em;
   color: #fdf9e3;
 }
 
