@@ -1,3 +1,10 @@
+{% comment %}
+  Displays the site's navigation using the jekyll-menus plugin
+{% endcomment %}
+
+{% assign url = page.url | remove:'index.html' %}
+
+
 <div class="nav-container ">
     <div class="bar bar--sm bar--mobile-sticky visible-xs" data-scroll-class="100px:pos-fixed">
         <div class="container">
@@ -35,7 +42,7 @@
                     <div class="bar__module">
                         <ul class="menu-horizontal">
                             {% for link in site.menus.header %}
-                                <li class="{% if url == link.url %}current{% endif %}">
+                                <li {% if url == link.url %}class="current"{% endif %}>
                                     <a href="{{ link.url | absolute_url }}"{% if link.target %} target="_blank" {% endif %}>
                                       {{ link.title }}
                                     </a>
