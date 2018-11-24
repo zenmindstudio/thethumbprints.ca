@@ -211,9 +211,20 @@ article .article__body ul {
   font-size: 1em;
   color: #fdf9e3;
 }
-
 .masonry-blog-list article {
   border-bottom: 1px solid rgba(223, 144, 43, 0.4);
+}
+.pagination ol li {
+  border: 1px solid rgba(223, 144, 43, 0.4);
+}
+.pagination ol li.pagination__current {
+  background: rgba(223, 144, 43, 0.4);
+  color: #aaa;
+}
+@media all and (min-width: 991px) {
+  .sidebar {
+    margin-top: calc(18px);
+  }
 }
 
 /*! -- Stack Links -- */
@@ -292,6 +303,17 @@ img.cover-logo {
 .masonry__item:not(:empty) {
   margin-bottom: 40px;
 }
+.masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters {
+  background: black;
+  border: 1px solid rgba(223, 144, 43, 0.4);
+}
+.masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters ul li.active {
+  color: #df902b;
+}
+.masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters ul li:hover {
+  color: #df902b;
+}
+
 
 /*! -- Stack Images -- */
 .post img:last-child {

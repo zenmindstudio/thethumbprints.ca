@@ -1,0 +1,108 @@
+---
+title: Blog
+layout: default
+menu:
+  header:
+    weight: 3
+    title: Blog
+---
+
+<section class="space--xs">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">{{ page.title }}</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <div class="masonry">
+                    <div class="masonry__container row">
+                        <div class="masonry__item col-md-6"></div>
+                        {% for post in paginator.posts %}
+                            <div class="masonry__item col-md-6">
+                                <article class="feature feature-1">
+                                    <a href="{{ post.url }}" class="block">
+                                        <img alt="Image" src="{{ site.cloudinary_url }}/w_730,h_467,c_fill,g_face{{ post.image }}" />
+                                    </a>
+                                    <div class="feature__body boxed boxed--border bg-black">
+                                        <span>{{ post.date | date_to_string }}</span>
+                                        <h5>{{ post.title }}</h5>
+                                        <a href="{{ post.url }}">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!--end item-->
+                        {% endfor %}
+                    </div>
+                    <!--end of masonry container-->
+                    {% if paginator.total_pages > 1 %}
+                        <div class="pagination">
+                            {% if paginator.previous_page %}
+                                <a class="pagination__prev" href="{{ paginator.previous_page_path }}" title="Previous Page">&laquo;</a>
+                            {% endif %}
+                            <ol>
+                                {% for page in (1..paginator.total_pages) %}
+                                    {% if page == paginator.page %}
+                                        <li class="pagination__current">{{ page }}</li>
+                                    {% elsif page == 1 %}
+                                        <li>
+                                            <a href="{{ paginator.previous_page_path | relative_url }}">
+                                              {{ page }}
+                                            </a>
+                                        </li>
+                                    {% else %}
+                                        <li>
+                                            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">
+                                              {{ page }}
+                                            </a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ol>
+                            {% if paginator.next_page %}
+                                <a class="pagination__next" href="{{ paginator.next_page_path }}" title="Next Page">&raquo;</a>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+                <!--end masonry-->
+            </div>
+            <div class="col-lg-4 hidden-sm">
+                <div class="sidebar boxed boxed--border boxed--lg bg--black">
+                    {% unless site.categories == empty %}
+                        <div class="sidebar__widget">
+                            <h5>Categories</h5>
+                            <ul>
+                                {% for category in site.categories %}
+                                    {% assign category_name = category[0] %}
+                                    <li>
+                                        <a href="/category/{{ category_name | slugify }}">{{ category_name }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <!--end widget-->
+                    {% endunless %}
+                    <div class="sidebar__widget">
+                        <h5>Archives</h5>
+                        <ul>
+                            {% assign posts_by_month_and_year = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
+                            {% for month_and_year in posts_by_month_and_year %}
+                                <li>
+                                    <a href="/{{ month_and_year.items.first.date | date: "%Y" }}/{{ month_and_year.items.first.date | date: "%m" }}/">{{ month_and_year.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <!--end widget-->
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>

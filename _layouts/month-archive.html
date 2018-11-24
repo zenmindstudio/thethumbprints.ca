@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class="space--xs">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Posts from {{ page.date | date: "%B %Y" }}</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center page-content">
+          <div class="col-md-12">
+              <div class="masonry">
+                  <div class="masonry__container row">
+                      <div class="masonry__item col-md-6"></div>
+                      {% for post in page.posts %}
+                          <div class="masonry__item col-md-6">
+                              <article class="feature feature-1">
+                                  <a href="{{ post.url }}" class="block">
+                                      <img alt="Image" src="{{ site.cloudinary_url }}/w_730,h_467,c_fill,g_face{{ post.image }}" />
+                                  </a>
+                                  <div class="feature__body boxed boxed--border bg-black">
+                                      <span>{{ post.date | date_to_string }}</span>
+                                      <h5>{{ post.title }}</h5>
+                                      <a href="{{ post.url }}">
+                                          Read More
+                                      </a>
+                                  </div>
+                              </article>
+                          </div>
+                          <!--end item-->
+                      {% endfor %}
+                  </div>
+                  <!--end of masonry container-->
+              </div>
+              <!--end masonry-->
+          </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>

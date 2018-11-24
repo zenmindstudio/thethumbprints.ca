@@ -54,6 +54,28 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-menus
+  - jekyll-archives
+  - jekyll-paginate
+
+# Jekyll archives
+jekyll-archives:
+  enabled:
+    - categories
+    - month
+  layout: archive
+  layouts:
+    category: category-archive
+    month: month-archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+# Jekyll paginate
+paginate: 1
+paginate_path: "/blog/page:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
