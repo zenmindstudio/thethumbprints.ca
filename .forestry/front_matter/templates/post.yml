@@ -9,6 +9,9 @@ fields:
 - type: file
   name: image
   label: Image
+- type: tag_list
+  name: categories
+  label: Categories
 pages:
 - _posts/2018-11-17-rogan-art-exquisite-beautiful-and-mystic.md
 - _posts/2018-11-17-metal-art-enigmatic-and-connected-to-the-roots.md
