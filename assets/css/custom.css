@@ -54,8 +54,11 @@ footer {
 }
 
 /**! 10. Menus **/
+.nav-container {
+  min-height: 0 !important;
+}
 .menu-horizontal > li.current {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 .menu-horizontal > li:not(:hover) > a,
 .menu-horizontal > li:not(:hover) > span,
