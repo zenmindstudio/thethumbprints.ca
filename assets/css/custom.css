@@ -226,6 +226,10 @@ article .article__body ul {
   background: rgba(223, 144, 43, 0.4);
   color: #aaa;
 }
+article .article__body img.float-left {
+  width: 49%;
+  margin-right: 0.5%;
+}
 @media all and (min-width: 991px) {
   .sidebar {
     margin-top: calc(18px);
