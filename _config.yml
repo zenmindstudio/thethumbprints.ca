@@ -47,6 +47,9 @@ defaults:
       type: posts
     values:
       layout: post
+      _options:
+        content:
+          styles: /assets/css/content.css
 
 # Build settings
 markdown: kramdown
