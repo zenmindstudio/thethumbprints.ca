@@ -2,7 +2,7 @@
 id: ''
 position: ''
 title: Blue and White Onyx Ashtray
-description: Super cool Blue and White patterned Onyx Stone ashtray
+description: Super cool Blue and White patterned Onyx stone ashtray
 origin: ''
 dimensions: ''
 images:
