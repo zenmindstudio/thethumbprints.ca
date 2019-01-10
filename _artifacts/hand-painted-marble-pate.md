@@ -9,6 +9,5 @@ dimensions: ''
 images:
 - "/v1547128357/marbel%20handpainted%20plate.jpg"
 date: 2019-01-10 05:56:01 -0800
-published: false
 
 ---
