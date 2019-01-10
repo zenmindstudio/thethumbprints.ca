@@ -1,7 +1,7 @@
 ---
 id: ''
 position: ''
-title: Hand Painted Marble Pate
+title: Hand Painted Marble Plate
 description: These Painted Marble plates have their origins in Persia but over the
   centuries got its distinct choice of colors and patterns in Northern India.
 origin: ''
