@@ -1,7 +1,6 @@
 ---
 label: Artifact
 hide_body: true
-is_partial: false
 fields:
 - type: text
   name: id
@@ -28,31 +27,32 @@ fields:
   name: images
   label: Images
 pages:
-- _artifacts/musicians.md
+- _artifacts/miniature-painting.md
+- _artifacts/jeweled-rich-white-marble-vase.md
+- _artifacts/hand-painted-marble-pate.md
+- _artifacts/blue-and-white-onyx-ashtray.md
+- _artifacts/rare-onyx-stone-ashtray.md
+- _artifacts/hand-decorated-marble-stone-glass.md
+- _artifacts/natural-green-onyx-ashtray.md
+- _artifacts/natural-onyx-stone-wine-glass.md
+- _artifacts/natural-pink-onyx-stone-ashtray.md
+- _artifacts/round-natural-onyx-stone-glasses.md
+- _artifacts/natural-onyx-stone-vase.md
+- _artifacts/ornamental-ceremonial-elephants.md
 - _artifacts/victory-horse.md
 - _artifacts/stylish-turtle-ash-try-and-smoke-stick-holder.md
 - _artifacts/queen.md
+- _artifacts/musicians.md
+- _artifacts/group-of-monkeys.md
+- _artifacts/horn-trumpet.md
+- _artifacts/face-mask.md
+- _artifacts/tribals-head-gears.md
 - _artifacts/knock-knock.md
+- _artifacts/antique-lamp.md
+- _artifacts/raptors.md
+- _artifacts/twonicorn.md
+- _artifacts/smiley-face-mask.md
 - _artifacts/bamboo-flute.md
+- _artifacts/antler-deer-clouple.md
 - _artifacts/holy-cow.md
 - _artifacts/couple.md
-- _artifacts/raptors.md
-- _artifacts/face-mask.md
-- _artifacts/smiley-face-mask.md
-- _artifacts/antique-lamp.md
-- _artifacts/antler-deer-clouple.md
-- _artifacts/twonicorn.md
-- _artifacts/tribals-head-gears.md
-- _artifacts/horn-trumpet.md
-- _artifacts/group-of-monkeys.md
-- _artifacts/ornamental-ceremonial-elephants.md
-- _artifacts/natural-onyx-stone-vase.md
-- _artifacts/hand-painted-marble-pate.md
-- _artifacts/jeweled-rich-white-marble-vase.md
-- _artifacts/round-natural-onyx-stone-glasses.md
-- _artifacts/natural-pink-onyx-stone-ashtray.md
-- _artifacts/natural-onyx-stone-wine-glass.md
-- _artifacts/natural-green-onyx-ashtray.md
-- _artifacts/blue-and-white-onyx-ashtray.md
-- _artifacts/hand-decorated-marble-stone-glass.md
-- _artifacts/rare-onyx-stone-ashtray.md
