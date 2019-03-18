@@ -1,6 +1,6 @@
 ---
 id: ''
-position: ''
+position: 4
 title: Miniature Painting
 description: 'Miniature Paintings are done with utmost care and in minute details
   with strong lines and bold colours set in harmonious patterns.  The colours are
