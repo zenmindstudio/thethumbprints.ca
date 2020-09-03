@@ -12,6 +12,6 @@ fields:
   name: categories
   label: Categories
 pages:
-- _posts/magical-crafts-of-kutch.md
-- _posts/2018-11-17-rogan-art-exquisite-beautiful-and-mystic.md
 - _posts/2018-11-17-metal-art-enigmatic-and-connected-to-the-roots.md
+- _posts/2018-11-17-rogan-art-exquisite-beautiful-and-mystic.md
+- _posts/magical-crafts-of-kutch.md
