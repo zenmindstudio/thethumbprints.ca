@@ -21,9 +21,9 @@ sections:
   label: Pages
   create: all
 upload_dir: ''
-public_path: ''
-front_matter_path: ''
-use_front_matter_path: 
+public_path: https://res.cloudinary.com/mehtavd/image/upload
+front_matter_path: https://res.cloudinary.com/mehtavd/image/upload
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_env:
