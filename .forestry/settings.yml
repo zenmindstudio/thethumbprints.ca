@@ -10,8 +10,10 @@ sections:
 - type: directory
   path: _artifacts
   label: Artifacts
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - artifact
 - type: jekyll-posts
   label: Posts
   create: all
